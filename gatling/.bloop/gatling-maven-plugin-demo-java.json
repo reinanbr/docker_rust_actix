@@ -1,0 +1,1641 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "gatling-maven-plugin-demo-java",
+        "directory": "/home/jzs/Área de trabalho/std/devops/rust/docker_rocket/gatling",
+        "workspaceDir": "/home/jzs/Área de trabalho/std/devops/rust/docker_rocket/gatling",
+        "sources": [
+            
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/home/jzs/Área de trabalho/std/devops/rust/docker_rocket/gatling/target/classes"
+        ],
+        "out": "/home/jzs/Área de trabalho/std/devops/rust/docker_rocket/gatling/target",
+        "classesDir": "/home/jzs/Área de trabalho/std/devops/rust/docker_rocket/gatling/target/classes",
+        "resources": [
+            "/home/jzs/Área de trabalho/std/devops/rust/docker_rocket/gatling/src/main/resources"
+        ],
+        "java": {
+            "options": [
+                "-g",
+                "--release",
+                "11",
+                "-encoding",
+                "UTF-8"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/usr/lib/jvm/java-21-openjdk-amd64",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-epoll",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-epoll",
+                            "classifier": "linux-aarch_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport-native-epoll/4.2.1.Final/netty-transport-native-epoll-4.2.1.Final-linux-aarch_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-http/4.2.1.Final/netty-codec-http-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-http/4.2.1.Final/netty-codec-http-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-classes-epoll",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-classes-epoll",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport-classes-epoll/4.2.1.Final/netty-transport-classes-epoll-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-classes-epoll",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport-classes-epoll/4.2.1.Final/netty-transport-classes-epoll-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jms-java",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jms-java",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-jms-java/3.14.3/gatling-jms-java-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-jms-java",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-jms-java/3.14.3/gatling-jms-java-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.spotbugs",
+                    "name": "spotbugs-annotations",
+                    "version": "4.9.3",
+                    "artifacts": [
+                        {
+                            "name": "spotbugs-annotations",
+                            "path": "/home/jzs/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.9.3/spotbugs-annotations-4.9.3.jar"
+                        },
+                        {
+                            "name": "spotbugs-annotations",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.9.3/spotbugs-annotations-4.9.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jsonpath",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jsonpath",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-jsonpath/3.14.3/gatling-jsonpath-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-jsonpath",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-jsonpath/3.14.3/gatling-jsonpath-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.3",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "/home/jzs/.m2/repository/com/typesafe/config/1.4.3/config-1.4.3.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/typesafe/config/1.4.3/config-1.4.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling.highcharts",
+                    "name": "gatling-charts-highcharts",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-charts-highcharts",
+                            "path": "/home/jzs/.m2/repository/io/gatling/highcharts/gatling-charts-highcharts/3.14.3/gatling-charts-highcharts-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-charts-highcharts",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/highcharts/gatling-charts-highcharts/3.14.3/gatling-charts-highcharts-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.5.18",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "path": "/home/jzs/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.jodah",
+                    "name": "typetools",
+                    "version": "0.6.3",
+                    "artifacts": [
+                        {
+                            "name": "typetools",
+                            "path": "/home/jzs/.m2/repository/net/jodah/typetools/0.6.3/typetools-0.6.3.jar"
+                        },
+                        {
+                            "name": "typetools",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/net/jodah/typetools/0.6.3/typetools-0.6.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "native-linux-x86_64",
+                    "version": "1.18.0",
+                    "artifacts": [
+                        {
+                            "name": "native-linux-x86_64",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.18.0/native-linux-x86_64-1.18.0.jar"
+                        },
+                        {
+                            "name": "native-linux-x86_64",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.18.0/native-linux-x86_64-1.18.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-pool2",
+                    "version": "2.8.0",
+                    "artifacts": [
+                        {
+                            "name": "commons-pool2",
+                            "path": "/home/jzs/.m2/repository/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0.jar"
+                        },
+                        {
+                            "name": "commons-pool2",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.pebbletemplates",
+                    "name": "pebble",
+                    "version": "3.2.4",
+                    "artifacts": [
+                        {
+                            "name": "pebble",
+                            "path": "/home/jzs/.m2/repository/io/pebbletemplates/pebble/3.2.4/pebble-3.2.4.jar"
+                        },
+                        {
+                            "name": "pebble",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/pebbletemplates/pebble/3.2.4/pebble-3.2.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-buffer",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-buffer",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-buffer/4.2.1.Final/netty-buffer-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-buffer",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-buffer/4.2.1.Final/netty-buffer-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-charts",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-charts",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-charts/3.14.3/gatling-charts-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-charts",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-charts/3.14.3/gatling-charts-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-http-client",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-http-client",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-http-client/3.14.3/gatling-http-client-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-http-client",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-http-client/3.14.3/gatling-http-client-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver-dns-native-macos",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver-dns-native-macos",
+                            "classifier": "osx-aarch_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.2.1.Final/netty-resolver-dns-native-macos-4.2.1.Final-osx-aarch_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-classes-io_uring",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-classes-io_uring",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport-classes-io_uring/4.2.1.Final/netty-transport-classes-io_uring-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-classes-io_uring",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport-classes-io_uring/4.2.1.Final/netty-transport-classes-io_uring-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-core",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-core",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-core/3.14.3/gatling-core-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-core",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-core/3.14.3/gatling-core-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-dns",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-dns",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-dns/4.2.1.Final/netty-codec-dns-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-dns",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-dns/4.2.1.Final/netty-codec-dns-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "native-osx-aarch64",
+                    "version": "1.18.0",
+                    "artifacts": [
+                        {
+                            "name": "native-osx-aarch64",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/native-osx-aarch64/1.18.0/native-osx-aarch64-1.18.0.jar"
+                        },
+                        {
+                            "name": "native-osx-aarch64",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/native-osx-aarch64/1.18.0/native-osx-aarch64-1.18.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "brotli4j",
+                    "version": "1.18.0",
+                    "artifacts": [
+                        {
+                            "name": "brotli4j",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.18.0/brotli4j-1.18.0.jar"
+                        },
+                        {
+                            "name": "brotli4j",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.18.0/brotli4j-1.18.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.sf.saxon",
+                    "name": "Saxon-HE",
+                    "version": "12.7",
+                    "artifacts": [
+                        {
+                            "name": "Saxon-HE",
+                            "path": "/home/jzs/.m2/repository/net/sf/saxon/Saxon-HE/12.7/Saxon-HE-12.7.jar"
+                        },
+                        {
+                            "name": "Saxon-HE",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/net/sf/saxon/Saxon-HE/12.7/Saxon-HE-12.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "native-linux-aarch64",
+                    "version": "1.18.0",
+                    "artifacts": [
+                        {
+                            "name": "native-linux-aarch64",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/native-linux-aarch64/1.18.0/native-linux-aarch64-1.18.0.jar"
+                        },
+                        {
+                            "name": "native-linux-aarch64",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/native-linux-aarch64/1.18.0/native-linux-aarch64-1.18.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-unix-common",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport-native-unix-common/4.2.1.Final/netty-transport-native-unix-common-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport-native-unix-common/4.2.1.Final/netty-transport-native-unix-common-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jodd",
+                    "name": "jodd-util",
+                    "version": "6.3.0",
+                    "artifacts": [
+                        {
+                            "name": "jodd-util",
+                            "path": "/home/jzs/.m2/repository/org/jodd/jodd-util/6.3.0/jodd-util-6.3.0.jar"
+                        },
+                        {
+                            "name": "jodd-util",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/jodd/jodd-util/6.3.0/jodd-util-6.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.71.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.71.Final/netty-tcnative-boringssl-static-2.0.71.Final.jar"
+                        },
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.71.Final/netty-tcnative-boringssl-static-2.0.71.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.simpleflatmapper",
+                    "name": "lightning-csv",
+                    "version": "9.0.2",
+                    "artifacts": [
+                        {
+                            "name": "lightning-csv",
+                            "path": "/home/jzs/.m2/repository/org/simpleflatmapper/lightning-csv/9.0.2/lightning-csv-9.0.2.jar"
+                        },
+                        {
+                            "name": "lightning-csv",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/simpleflatmapper/lightning-csv/9.0.2/lightning-csv-9.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.scopt",
+                    "name": "scopt_2.13",
+                    "version": "3.7.1",
+                    "artifacts": [
+                        {
+                            "name": "scopt_2.13",
+                            "path": "/home/jzs/.m2/repository/com/github/scopt/scopt_2.13/3.7.1/scopt_2.13-3.7.1.jar"
+                        },
+                        {
+                            "name": "scopt_2.13",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/github/scopt/scopt_2.13/3.7.1/scopt_2.13-3.7.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-base",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-base",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-base/4.2.1.Final/netty-codec-base-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-base",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-base/4.2.1.Final/netty-codec-base-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-recorder",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-recorder",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-recorder/3.14.3/gatling-recorder-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-recorder",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-recorder/3.14.3/gatling-recorder-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-http-java",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-http-java",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-http-java/3.14.3/gatling-http-java-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-http-java",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-http-java/3.14.3/gatling-http-java-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.5.18",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "path": "/home/jzs/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.71.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "linux-x86_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.71.Final/netty-tcnative-boringssl-static-2.0.71.Final-linux-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver-dns-classes-macos",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver-dns-classes-macos",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.2.1.Final/netty-resolver-dns-classes-macos-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver-dns-classes-macos",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.2.1.Final/netty-resolver-dns-classes-macos-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-shared-model_2.13",
+                    "version": "0.1.1",
+                    "artifacts": [
+                        {
+                            "name": "gatling-shared-model_2.13",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-shared-model_2.13/0.1.1/gatling-shared-model_2.13-0.1.1.jar"
+                        },
+                        {
+                            "name": "gatling-shared-model_2.13",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-shared-model_2.13/0.1.1/gatling-shared-model_2.13-0.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-swing_2.13",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-swing_2.13",
+                            "path": "/home/jzs/.m2/repository/org/scala-lang/modules/scala-swing_2.13/3.0.0/scala-swing_2.13-3.0.0.jar"
+                        },
+                        {
+                            "name": "scala-swing_2.13",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/scala-lang/modules/scala-swing_2.13/3.0.0/scala-swing_2.13-3.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "service",
+                    "version": "1.18.0",
+                    "artifacts": [
+                        {
+                            "name": "service",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/service/1.18.0/service-1.18.0.jar"
+                        },
+                        {
+                            "name": "service",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/service/1.18.0/service-1.18.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.71.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "linux-aarch_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.71.Final/netty-tcnative-boringssl-static-2.0.71.Final-linux-aarch_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.scala-logging",
+                    "name": "scala-logging_2.13",
+                    "version": "3.9.5",
+                    "artifacts": [
+                        {
+                            "name": "scala-logging_2.13",
+                            "path": "/home/jzs/.m2/repository/com/typesafe/scala-logging/scala-logging_2.13/3.9.5/scala-logging_2.13-3.9.5.jar"
+                        },
+                        {
+                            "name": "scala-logging_2.13",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/typesafe/scala-logging/scala-logging_2.13/3.9.5/scala-logging_2.13-3.9.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.19.0",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "/home/jzs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0/jackson-databind-2.19.0.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0/jackson-databind-2.19.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.burt",
+                    "name": "jmespath-jackson",
+                    "version": "0.6.0",
+                    "artifacts": [
+                        {
+                            "name": "jmespath-jackson",
+                            "path": "/home/jzs/.m2/repository/io/burt/jmespath-jackson/0.6.0/jmespath-jackson-0.6.0.jar"
+                        },
+                        {
+                            "name": "jmespath-jackson",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/burt/jmespath-jackson/0.6.0/jmespath-jackson-0.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.19.0",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "/home/jzs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0/jackson-core-2.19.0.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0/jackson-core-2.19.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver-dns",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver-dns",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-resolver-dns/4.2.1.Final/netty-resolver-dns-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver-dns",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-resolver-dns/4.2.1.Final/netty-resolver-dns-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-redis",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-redis",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-redis/3.14.3/gatling-redis-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-redis",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-redis/3.14.3/gatling-redis-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.71.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "osx-aarch_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.71.Final/netty-tcnative-boringssl-static-2.0.71.Final-osx-aarch_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-io_uring",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-io_uring",
+                            "classifier": "linux-aarch_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport-native-io_uring/4.2.1.Final/netty-transport-native-io_uring-4.2.1.Final-linux-aarch_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "xerces",
+                    "name": "xercesImpl",
+                    "version": "2.12.2",
+                    "artifacts": [
+                        {
+                            "name": "xercesImpl",
+                            "path": "/home/jzs/.m2/repository/xerces/xercesImpl/2.12.2/xercesImpl-2.12.2.jar"
+                        },
+                        {
+                            "name": "xercesImpl",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/xerces/xercesImpl/2.12.2/xercesImpl-2.12.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jdbc-java",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jdbc-java",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-jdbc-java/3.14.3/gatling-jdbc-java-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-jdbc-java",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-jdbc-java/3.14.3/gatling-jdbc-java-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.burt",
+                    "name": "jmespath-core",
+                    "version": "0.6.0",
+                    "artifacts": [
+                        {
+                            "name": "jmespath-core",
+                            "path": "/home/jzs/.m2/repository/io/burt/jmespath-core/0.6.0/jmespath-core-0.6.0.jar"
+                        },
+                        {
+                            "name": "jmespath-core",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/burt/jmespath-core/0.6.0/jmespath-core-0.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "native-windows-x86_64",
+                    "version": "1.18.0",
+                    "artifacts": [
+                        {
+                            "name": "native-windows-x86_64",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/native-windows-x86_64/1.18.0/native-windows-x86_64-1.18.0.jar"
+                        },
+                        {
+                            "name": "native-windows-x86_64",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/native-windows-x86_64/1.18.0/native-windows-x86_64-1.18.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.simpleflatmapper",
+                    "name": "sfm-util",
+                    "version": "9.0.2",
+                    "artifacts": [
+                        {
+                            "name": "sfm-util",
+                            "path": "/home/jzs/.m2/repository/org/simpleflatmapper/sfm-util/9.0.2/sfm-util-9.0.2.jar"
+                        },
+                        {
+                            "name": "sfm-util",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/simpleflatmapper/sfm-util/9.0.2/sfm-util-9.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-common",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-common",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-common/4.2.1.Final/netty-common-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-common",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-common/4.2.1.Final/netty-common-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-epoll",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-epoll",
+                            "classifier": "linux-x86_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport-native-epoll/4.2.1.Final/netty-transport-native-epoll-4.2.1.Final-linux-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-http",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-http",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-http/3.14.3/gatling-http-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-http",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-http/3.14.3/gatling-http-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-shared-cli",
+                    "version": "0.0.6",
+                    "artifacts": [
+                        {
+                            "name": "gatling-shared-cli",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-shared-cli/0.0.6/gatling-shared-cli-0.0.6.jar"
+                        },
+                        {
+                            "name": "gatling-shared-cli",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-shared-cli/0.0.6/gatling-shared-cli-0.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.suzaku",
+                    "name": "boopickle_2.13",
+                    "version": "1.5.0",
+                    "artifacts": [
+                        {
+                            "name": "boopickle_2.13",
+                            "path": "/home/jzs/.m2/repository/io/suzaku/boopickle_2.13/1.5.0/boopickle_2.13-1.5.0.jar"
+                        },
+                        {
+                            "name": "boopickle_2.13",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/suzaku/boopickle_2.13/1.5.0/boopickle_2.13-1.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http2",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http2",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-http2/4.2.1.Final/netty-codec-http2-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http2",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-http2/4.2.1.Final/netty-codec-http2-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jdbc",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jdbc",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-jdbc/3.14.3/gatling-jdbc-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-jdbc",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-jdbc/3.14.3/gatling-jdbc-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport/4.2.1.Final/netty-transport-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport/4.2.1.Final/netty-transport-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.debasishg",
+                    "name": "redisclient_2.13",
+                    "version": "3.42",
+                    "artifacts": [
+                        {
+                            "name": "redisclient_2.13",
+                            "path": "/home/jzs/.m2/repository/net/debasishg/redisclient_2.13/3.42/redisclient_2.13-3.42.jar"
+                        },
+                        {
+                            "name": "redisclient_2.13",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/net/debasishg/redisclient_2.13/3.42/redisclient_2.13-3.42-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-handler/4.2.1.Final/netty-handler-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-handler/4.2.1.Final/netty-handler-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.71.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "windows-x86_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.71.Final/netty-tcnative-boringssl-static-2.0.71.Final-windows-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_2.13",
+                    "version": "2.12.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "path": "/home/jzs/.m2/repository/org/scala-lang/modules/scala-collection-compat_2.13/2.12.0/scala-collection-compat_2.13-2.12.0.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/scala-lang/modules/scala-collection-compat_2.13/2.12.0/scala-collection-compat_2.13-2.12.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jms",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jms",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-jms/3.14.3/gatling-jms-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-jms",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-jms/3.14.3/gatling-jms-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver-dns-native-macos",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver-dns-native-macos",
+                            "classifier": "osx-x86_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.2.1.Final/netty-resolver-dns-native-macos-4.2.1.Final-osx-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.unbescape",
+                    "name": "unbescape",
+                    "version": "1.1.6.RELEASE",
+                    "artifacts": [
+                        {
+                            "name": "unbescape",
+                            "path": "/home/jzs/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar"
+                        },
+                        {
+                            "name": "unbescape",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-compression",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-compression",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-compression/4.2.1.Final/netty-codec-compression-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-compression",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-compression/4.2.1.Final/netty-codec-compression-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-netty-util",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-netty-util",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-netty-util/3.14.3/gatling-netty-util-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-netty-util",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-netty-util/3.14.3/gatling-netty-util-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.jms",
+                    "name": "jakarta.jms-api",
+                    "version": "3.1.0",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.jms-api",
+                            "path": "/home/jzs/.m2/repository/jakarta/jms/jakarta.jms-api/3.1.0/jakarta.jms-api-3.1.0.jar"
+                        },
+                        {
+                            "name": "jakarta.jms-api",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/jakarta/jms/jakarta.jms-api/3.1.0/jakarta.jms-api-3.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-quicklens",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-quicklens",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-quicklens/3.14.3/gatling-quicklens-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-quicklens",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-quicklens/3.14.3/gatling-quicklens-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.19.0",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/home/jzs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.0/jackson-annotations-2.19.0.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.0/jackson-annotations-2.19.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.71.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "osx-x86_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.71.Final/netty-tcnative-boringssl-static-2.0.71.Final-osx-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "2.0.17",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/home/jzs/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler-proxy",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler-proxy",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-handler-proxy/4.2.1.Final/netty-handler-proxy-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler-proxy",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-handler-proxy/4.2.1.Final/netty-handler-proxy-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.eatthepath",
+                    "name": "fast-uuid",
+                    "version": "0.2.0",
+                    "artifacts": [
+                        {
+                            "name": "fast-uuid",
+                            "path": "/home/jzs/.m2/repository/com/eatthepath/fast-uuid/0.2.0/fast-uuid-0.2.0.jar"
+                        },
+                        {
+                            "name": "fast-uuid",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/eatthepath/fast-uuid/0.2.0/fast-uuid-0.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-redis-java",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-redis-java",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-redis-java/3.14.3/gatling-redis-java-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-redis-java",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-redis-java/3.14.3/gatling-redis-java-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-recorder-bc-shaded",
+                    "version": "1.80.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-recorder-bc-shaded",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-recorder-bc-shaded/1.80.0/gatling-recorder-bc-shaded-1.80.0.jar"
+                        },
+                        {
+                            "name": "gatling-recorder-bc-shaded",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-recorder-bc-shaded/1.80.0/gatling-recorder-bc-shaded-1.80.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.ben-manes.caffeine",
+                    "name": "caffeine",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "caffeine",
+                            "path": "/home/jzs/.m2/repository/com/github/ben-manes/caffeine/caffeine/3.2.0/caffeine-3.2.0.jar"
+                        },
+                        {
+                            "name": "caffeine",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/github/ben-manes/caffeine/caffeine/3.2.0/caffeine-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-shared-util_2.13",
+                    "version": "0.0.12",
+                    "artifacts": [
+                        {
+                            "name": "gatling-shared-util_2.13",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-shared-util_2.13/0.0.12/gatling-shared-util_2.13-0.0.12.jar"
+                        },
+                        {
+                            "name": "gatling-shared-util_2.13",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-shared-util_2.13/0.0.12/gatling-shared-util_2.13-0.0.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.tdunning",
+                    "name": "t-digest",
+                    "version": "3.3",
+                    "artifacts": [
+                        {
+                            "name": "t-digest",
+                            "path": "/home/jzs/.m2/repository/com/tdunning/t-digest/3.3/t-digest-3.3.jar"
+                        },
+                        {
+                            "name": "t-digest",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/tdunning/t-digest/3.3/t-digest-3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.xmlresolver",
+                    "name": "xmlresolver",
+                    "version": "6.0.16",
+                    "artifacts": [
+                        {
+                            "name": "xmlresolver",
+                            "classifier": "data",
+                            "path": "/home/jzs/.m2/repository/org/xmlresolver/xmlresolver/6.0.16/xmlresolver-6.0.16-data.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/home/jzs/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.xmlresolver",
+                    "name": "xmlresolver",
+                    "version": "6.0.16",
+                    "artifacts": [
+                        {
+                            "name": "xmlresolver",
+                            "path": "/home/jzs/.m2/repository/org/xmlresolver/xmlresolver/6.0.16/xmlresolver-6.0.16.jar"
+                        },
+                        {
+                            "name": "xmlresolver",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/xmlresolver/xmlresolver/6.0.16/xmlresolver-6.0.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-core-java",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-core-java",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-core-java/3.14.3/gatling-core-java-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-core-java",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-core-java/3.14.3/gatling-core-java-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-app",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-app",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-app/3.14.3/gatling-app-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-app",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-app/3.14.3/gatling-app-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-io_uring",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-io_uring",
+                            "classifier": "linux-x86_64",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-transport-native-io_uring/4.2.1.Final/netty-transport-native-io_uring-4.2.1.Final-linux-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "native-osx-x86_64",
+                    "version": "1.18.0",
+                    "artifacts": [
+                        {
+                            "name": "native-osx-x86_64",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.18.0/native-osx-x86_64-1.18.0.jar"
+                        },
+                        {
+                            "name": "native-osx-x86_64",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.18.0/native-osx-x86_64-1.18.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.16",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/jzs/.m2/repository/org/scala-lang/scala-library/2.13.16/scala-library-2.13.16.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/scala-lang/scala-library/2.13.16/scala-library-2.13.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jodd",
+                    "name": "jodd-lagarto",
+                    "version": "6.0.6",
+                    "artifacts": [
+                        {
+                            "name": "jodd-lagarto",
+                            "path": "/home/jzs/.m2/repository/org/jodd/jodd-lagarto/6.0.6/jodd-lagarto-6.0.6.jar"
+                        },
+                        {
+                            "name": "jodd-lagarto",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/jodd/jodd-lagarto/6.0.6/jodd-lagarto-6.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-resolver/4.2.1.Final/netty-resolver-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-resolver/4.2.1.Final/netty-resolver-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jspecify",
+                    "name": "jspecify",
+                    "version": "1.0.0",
+                    "artifacts": [
+                        {
+                            "name": "jspecify",
+                            "path": "/home/jzs/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar"
+                        },
+                        {
+                            "name": "jspecify",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-commons",
+                    "version": "3.14.3",
+                    "artifacts": [
+                        {
+                            "name": "gatling-commons",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-commons/3.14.3/gatling-commons-3.14.3.jar"
+                        },
+                        {
+                            "name": "gatling-commons",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/gatling/gatling-commons/3.14.3/gatling-commons-3.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-socks",
+                    "version": "4.2.1.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-socks",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-socks/4.2.1.Final/netty-codec-socks-4.2.1.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-socks",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-codec-socks/4.2.1.Final/netty-codec-socks-4.2.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_2.13",
+                    "version": "2.4.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "path": "/home/jzs/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.13/2.4.0/scala-parser-combinators_2.13-2.4.0.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.13/2.4.0/scala-parser-combinators_2.13-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.errorprone",
+                    "name": "error_prone_annotations",
+                    "version": "2.36.0",
+                    "artifacts": [
+                        {
+                            "name": "error_prone_annotations",
+                            "path": "/home/jzs/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.10",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/home/jzs/.m2/repository/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-classes",
+                    "version": "2.0.71.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-classes",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-tcnative-classes/2.0.71.Final/netty-tcnative-classes-2.0.71.Final.jar"
+                        },
+                        {
+                            "name": "netty-tcnative-classes",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/netty/netty-tcnative-classes/2.0.71.Final/netty-tcnative-classes-2.0.71.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.metarank",
+                    "name": "cfor_2.13",
+                    "version": "0.3",
+                    "artifacts": [
+                        {
+                            "name": "cfor_2.13",
+                            "path": "/home/jzs/.m2/repository/io/github/metarank/cfor_2.13/0.3/cfor_2.13-0.3.jar"
+                        },
+                        {
+                            "name": "cfor_2.13",
+                            "classifier": "sources",
+                            "path": "/home/jzs/.m2/repository/io/github/metarank/cfor_2.13/0.3/cfor_2.13-0.3-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

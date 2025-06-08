@@ -27,4 +27,4 @@ COPY . .
 # Compila o projeto (pode ser usado em imagem final depois)
 RUN cargo build --release
 
-CMD ["cargo", "run"]
+CMD ["./target/release/docker_rocket"]
