@@ -9,19 +9,40 @@ import static io.gatling.javaapi.http.HttpDsl.*;
 public class BasicSimulation extends Simulation {
 
     HttpProtocolBuilder httpProtocol = http
-        .baseUrl("http://localhost:8000") // Altere conforme necessário
-        .acceptHeader("application/json");
+        .baseUrl("http://localhost:8080")
+        .acceptHeader("application/json")
+        .contentTypeHeader("application/json");
 
-    ScenarioBuilder scn = scenario("Test Rust Rocket API")
+    ScenarioBuilder scn = scenario("Test Actix API")
+        // 1. Testa GET /hello
         .exec(
-            http("GET Root")
-                .get("/")
+            http("GET /hello")
+                .get("/hello")
                 .check(status().is(200))
+                .check(jsonPath("$.status").is("online"))
+        )
+
+        // 2. Testa GET /data
+        .exec(
+            http("GET /data")
+                .get("/data")
+                .check(status().is(200))
+        )
+
+        // 3. Testa POST /data
+        .exec(
+            http("POST /data")
+                .post("/data")
+                .body(StringBody("{ \"key\": \"gatling\", \"value\": \"test\" }")).asJson()
+                .check(status().is(200))
+                .check(substring("Salvo com sucesso"))
         );
 
     {
         setUp(
-            scn.injectOpen(atOnceUsers(10))
+            scn.injectOpen(
+                constantUsersPerSec(100).during(30)
+            )
         ).protocols(httpProtocol);
     }
 }

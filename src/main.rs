@@ -77,7 +77,7 @@ async fn main() -> std::io::Result<()> {
             .route("/data", web::post().to(post_data))
             .route("/hello", web::get().to(hello)) // <- nova rota aqui
     })
-    .bind(("0.0.0.0", 8000))?
+    .bind(("0.0.0.0", 8080))?
     .run()
     .await
 }

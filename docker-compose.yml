@@ -8,8 +8,7 @@ services:
     ports:
       - "8080:8080"
     command: cargo run
-    deploy:
-      resources:
-        limits:
-          memory: 512M
-          cpus: '1.0'
+    mem_limit: 512m
+    cpus: 1.0
+    cpuset: "0"
+    
