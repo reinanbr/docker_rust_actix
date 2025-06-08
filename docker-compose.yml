@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  rust-app:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
+    command: cargo run
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '1.0'
